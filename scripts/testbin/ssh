@@ -1,0 +1,5 @@
+#!/bin/bash
+# Local stand-in for "ssh HOST COMMAND...": drop options and the host, run COMMAND here.
+while [[ "${1:-}" == -* ]]; do shift; done
+shift
+exec bash -c "$*"

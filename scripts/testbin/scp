@@ -1,0 +1,8 @@
+#!/bin/bash
+# Local stand-in for "scp [-q] SRC... HOST:DEST": copy SRC files to DEST on this machine.
+args=()
+for a in "$@"; do [[ "$a" == -* ]] || args+=("$a"); done
+dest="${args[-1]}"
+dest="${dest#*:}"
+unset 'args[-1]'
+exec cp -r "${args[@]}" "$dest"
