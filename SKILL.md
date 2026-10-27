@@ -133,3 +133,5 @@ bash scripts/run_mysqltest.sh ai_column ai_column_ddl ai_column_worker
 # PASS ai_column/ai_column_worker (7s)
 # suite=ai_column pass=2 fail=0
 ```
+
+<!-- OB-S:bV9gau-_W7KUaVpfo6WLJw -->
